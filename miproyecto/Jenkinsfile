@@ -19,9 +19,9 @@ pipeline{
                 echo 'Llamo a sonar con maven'
                 sh '''
                     cd miproyecto
-                    mvn sonar:sonar \
-                        -Dsonar.projectKey=curso \
-                        -Dsonar.host.url=http://172.31.9.124:8081 \
+                    mvn sonar:sonar \\
+                        -Dsonar.projectKey=curso \\
+                        -Dsonar.host.url=http://172.31.9.124:8081 \\
                         -Dsonar.login=85901dd583c148becc4804ac43b31703021f723d
                 '''
             }
